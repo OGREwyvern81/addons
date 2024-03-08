@@ -19,10 +19,10 @@
   ],
   "options": {
     "RS485": {
-      "type": "Serial"
+      "type": "Socket"
     },
     "Socket": {
-      "server": "192.168.x.x",
+      "server": "192.168.50.101",
       "port": 8899
     },
     "SocketDevice": {
@@ -36,17 +36,17 @@
     },
     "MQTT": {
       "anonymous": false,
-      "server": "192.168.x.x",
-      "username": "id",
-      "password": "pw"
+      "server": "192.168.50.118",
+      "username": "hama",
+      "password": "iopiop"
     },
     "Wallpad": {
-      "light": false,
+      "light": true,
       "plug": false,
       "thermostat": false,
       "fan": false,
       "gas": false,
-      "elevator": false
+      "elevator": true
     },
     "Advanced": {
       "INIT_TEMP": 22,
@@ -58,7 +58,7 @@
     "KOCOM_LIGHT_SIZE": [
       {
         "name": "livingroom",
-        "number": 3
+        "number": 4
       },
       {
         "name": "bedroom",
@@ -103,8 +103,7 @@
       "livingroom",
       "bedroom",
       "room1",
-      "room2",
-      "kitchen"
+      "room2"
     ],
     "KOCOM_ROOM_THERMOSTAT": [
       "livingroom",
